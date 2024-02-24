@@ -1,0 +1,31 @@
+html{
+    overflow: hidden;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+#principal{
+    height: 100%;
+    background: linear-gradient(blue,purple) no-repeat;
+}
+
+.pkm{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    bottom: 61%;
+    transform: translate(-63%, 20%);
+}
+
+#pkm_id{
+    font-size: 1.4em;
+    color: black;
+    position: absolute;
+    left: 51%;
+    bottom: 52%;
+    transform: translate(-50%, 60%);
+}
