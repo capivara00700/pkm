@@ -35,3 +35,16 @@ body{
     left: 43%;
     bottom: 38.5%;
 }
+
+#caixa{
+    width: 73%;
+    position: absolute;
+    left: 10%;
+    bottom: 29%;
+    color: black;
+    font-size: 0.9em;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: -3px 4px 0 #888;
+}
