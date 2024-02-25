@@ -16,6 +16,7 @@ body{
     background-size: 100%;
     height: 490px;
     width: 325px;
+    position: relative;
 }
 
 .pkm{
@@ -23,15 +24,14 @@ body{
     height: 70px;
     position: absolute;
     left: 50%;
-    bottom: 61%;
-    transform: translate(-63%, 20%);
+    bottom: 50%;
+    transform: translate(-65%, -20%);
 }
 
 #pkm_id{
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: black;
     position: absolute;
-    left: 51%;
-    bottom: 52%;
-    transform: translate(-50%, 60%);
+    left: 43%;
+    bottom: 38.5%;
 }
