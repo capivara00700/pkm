@@ -6,7 +6,7 @@ html{
 
 body{
     height: 100%;
-    background: linear-gradient(blue,purple) no-repeat;
+    background: linear-gradient(#c8a2c8,#40e0d0) no-repeat;
     background-size: 100%;
 }
 
