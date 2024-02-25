@@ -46,5 +46,5 @@ body{
     height: 35px;
     border: 1px solid black;
     border-radius: 5px;
-    box-shadow: -3px 4px 0 #888;
+    box-shadow: -3px 4px 0 #888, -4px 6px 0 black;
 }
