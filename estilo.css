@@ -40,11 +40,29 @@ body{
     width: 73%;
     position: absolute;
     left: 10%;
-    bottom: 29%;
+    bottom: 27%;
     color: black;
     font-size: 0.9em;
     height: 35px;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: -3px 4px 0 #888, -4px 6px 0 black;
+}
+
+.botão{
+    width: 35%;
+    margin: 0px 3px 0px 3px;
+    background: rgb(61, 61, 61);
+    color: white;
+    border: 1px solid black;
+    height: 35px;
+    border-radius: 3px;
+    box-shadow: -3px 4px 0 black;
+}
+
+#botões{
+    position: absolute;
+    bottom: 8%;
+    left: 9%;
+    width: 100%;
 }
