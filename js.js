@@ -35,8 +35,10 @@ const renderpokemon = async (pokemon) => {
 
         if(pokemonFoto.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']){
             pokemonFoto.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
-        } else {
+        } else if(pokemonFoto.src = data['sprites']['versions']['generation-vii']['ultra-sun-ultra-moon']['front_default']) {
             pokemonFoto.src = data['sprites']['versions']['generation-vii']['ultra-sun-ultra-moon']['front_default'];
+        } else {
+            pokemonFoto.src = data['sprites']['versions']['generation-viii']['icons']['front_default'];
         }
 
     } else {
