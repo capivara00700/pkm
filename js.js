@@ -28,7 +28,13 @@ const renderpokemon = async (pokemon) => {
     if(data){
         pokemonName.innerHTML = data.name
         pokemonNumber.innerHTML = data.id
-        pokemonFoto.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+        
+        if(pokemonFoto.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']){
+            pokemonFoto.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
+        } else {
+            pokemonFoto.src = data['sprites']['versions']['generation-vii']['ultra-sun-ultra-moon']['front_default'];
+        }
+
     } else {
         pokemonName.innerHTML = 'Not found'
         pokemonNumber.innerHTML = '0'
