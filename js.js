@@ -4,8 +4,11 @@ const pokemonFoto = document.querySelector('.pkm');
 
 const form = document.querySelector('.form');
 const input = document.querySelector('.input_search');
-const buttonPrev = document.querySelector('.btn_prev');
-const buttonNext = document.querySelector('.btn_next');
+
+const buttonPrev = document.querySelector('.btn-prev');
+const buttonNext = document.querySelector('.btn-next');
+
+let ProcurarPkm = 1;
 
 const Buscarpkm = async (pokemon) => {
 const Resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -28,7 +31,8 @@ const renderpokemon = async (pokemon) => {
     if(data){
         pokemonName.innerHTML = data.name
         pokemonNumber.innerHTML = data.id
-        
+        ProcurarPkm = data.id
+
         if(pokemonFoto.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']){
             pokemonFoto.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
         } else {
@@ -50,6 +54,22 @@ form.addEventListener('submit', (event) => {
 
     renderpokemon(input.value.toLowerCase())
     input.value = ''
-})
+});
 
-renderpokemon('1')
+buttonPrev.addEventListener('click', () => {
+    if(ProcurarPkm > 1){
+        ProcurarPkm -= 1
+        renderpokemon(ProcurarPkm)
+    }
+});
+
+buttonNext.addEventListener('click', () => {
+    ProcurarPkm += 1
+    renderpokemon(ProcurarPkm)
+});
+
+
+
+
+
+renderpokemon(ProcurarPkm)
