@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="estilo.css"> 
 
     <!--Script-->
-    <script src="js.js"></script>
+    <script defer src="js.js"></script>
 
 </head>
 <body>
@@ -25,23 +25,24 @@
     <div class="col-sm">
         <div class="d-flex justify-content-center pt-5">
             <div id="principal">
-                <img src="https://seeklogo.com/images/P/pikachu-logo-619ACB690E-seeklogo.com.png" class="pkm">
+                <img src="" class="pkm">
 
                 <h1 id="pkm_id">
-                    <span style="color: gray;">25- </span>
-                    <span>Pikachu</span>
+                    <span style="color: gray;" class="pkm_numero"></span> -
+                    <span class="pkm_nome"></span>
                 </h1>
 
-                <form>
+                <form class="form">
                     <input type="search"
+                            class="input_search"
                             placeholder="Name or Number"
                             required
                             id="caixa">
                 </form>
 
                 <div id="botões">
-                    <button type="button" class="botão">Anterior< </button>
-                    <button type="button" class="botão"> >Próximo</button>
+                    <button type="button" class="botão btn-prev">Anterior< </button>
+                    <button type="button" class="botão btn-next"> >Próximo</button>
                 </div>
             </div>
         </div>
